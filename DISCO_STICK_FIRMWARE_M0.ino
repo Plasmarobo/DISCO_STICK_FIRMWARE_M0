@@ -99,6 +99,8 @@ void adc_init(){
 }
 
 void setup(){
+  //allow serial to setup
+  delay(1000);
   Serial.begin(115200);
   Serial.print("Boot");
   analogWriteResolution(10);
